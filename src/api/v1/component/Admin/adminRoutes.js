@@ -2,7 +2,7 @@ import express from "express";
 const router = express.Router();
 
 import { listAllOrders, updateStatus } from "./adminController.js";
-import { adminAuth } from "../../../../middlewares/adminAuthMiddleware.js";
+import { adminAuth } from "../../../../middlewares/AuthMiddleware.js";
 
 router.use(adminAuth('ADMIN'));
 

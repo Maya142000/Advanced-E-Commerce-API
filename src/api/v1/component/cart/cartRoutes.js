@@ -2,7 +2,7 @@ import express from "express";
 const router = express.Router();
 
 import { addItem, getCart, removeItem } from "./cartController.js";
-import { userAuth } from "../../../../middlewares/adminAuthMiddleware.js";
+import { userAuth } from "../../../../middlewares/AuthMiddleware.js";
 
 router.use(userAuth('USER'));
 

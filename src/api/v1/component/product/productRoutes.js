@@ -2,7 +2,7 @@ import express from "express";
 const router = express.Router();
 
 import { addProduct, updatedProduct, deleteProduct, listProducts } from "./productController.js";
-import { adminAuth } from "../../../../middlewares/adminAuthMiddleware.js";
+import { adminAuth } from "../../../../middlewares/AuthMiddleware.js";
 
 
 router.post("/addProduct", adminAuth("ADMIN"), addProduct );
